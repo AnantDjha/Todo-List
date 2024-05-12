@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+ background-color: grey;
+}
+.mainDiv{
+  /* background-color: black; */
+  width:70vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:1.5rem;background-color: rgb(182, 182, 182);
+  margin: 2rem auto;
+  border-radius: 0.8rem;
+  
+}
+.inpBtn{
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  /* padding: 1.6rem; */
+margin: 1.5rem 0;
+  /* background-color: black; */
+}
+.input{
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  width:85%;
+  border-radius:0.5rem ;
+  outline: none;
+  border: none;
+}
+.inpBtn button{
+  width: 10%;
+  margin-left: 0.4rem;
+  border-radius:0.5rem ;
+  border: none;
+  outline: none;
+  background-color: rgb(245, 167, 44);
+  cursor: pointer;
+
+}
+.checkDiv{
+  width: 80%;
+
+}
+.showerList{
+  /* background-color: aqua; */
+  width: 80%;
+  height:75%;
+  margin-top: 1rem;
+  overflow-y: auto;
+}
+.showerList .div{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  background-color: rgb(225, 225, 225);
+  border-radius: 0.9rem;
+  margin: 0.4rem;
+  /* flex-wrap: wrap; */
+  overflow: hidden;
+}
+
+.crossed{
+  text-decoration: line-through;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.para{
+  display: flex;
+  width:90%;
+  justify-content: space-around;
+  /* background-color: bisque; */
+  align-items: center;
+
+}
+
+.radio{
+  height: 20px;
+  width:20px;
+}
+.task{
+  width: 90%;
+  
+  padding: 10px;
+  /* text-wrap: wrap; */
+  word-wrap: break-word;
+
+}
+
+@media only screen and (max-width:1123px)
+{
+  .mainDiv{
+    width:100%;
+    height: 100vh;
+    margin: 0;
+  }
+  .checkDiv{
+    width: 100%;
+  
+  }
+  .showerList{
+    /* background-color: aqua; */
+    width: 100%;
+    
+  }
+}
+@media only screen and (max-width:475px)
+{
+  .inpBtn{
+    width: 100%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width:400px)
+{
+ .input{
+  width:80%;
+ }
+ .inpBtn button{
+  width:15%;
+ }
+ 
+}
